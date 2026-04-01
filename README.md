@@ -44,8 +44,9 @@ This repository is designed to give new developers a complete, working picture o
 ```
 testdawcore/
 ├── index.html                          # Main demo — a working DAW in ~20 lines of HTML
-├── audio/
-│   └── RATP.mp3                        # Sample audio file pre-loaded into the demo track
+├── public/
+│   └── audio/
+│       └── RATP.mp3                    # Sample audio file pre-loaded into the demo track
 ├── vite.config.js                      # Sets base path for GitHub Pages
 ├── CLAUDE.md                           # AI collaboration conventions (read by Claude Code)
 ├── .github/workflows/deploy.yml        # Automated GitHub Pages deployment
