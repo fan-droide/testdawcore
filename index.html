@@ -9,6 +9,8 @@
 
 <body>
 
+  <button id="mic-btn">Enable Mic</button>
+
   <daw-editor id="editor" mono clip-headers interactive-clips timescale file-drop>
     <daw-track name="Vocals">
       <daw-clip src="audio/RATP.mp3"></daw-clip>
@@ -17,15 +19,14 @@
   </daw-editor>
 
   <daw-transport for="editor">
+    <daw-record-button></daw-record-button>
     <daw-play-button></daw-play-button>
     <daw-pause-button></daw-pause-button>
     <daw-stop-button></daw-stop-button>
   </daw-transport>
 
-  <script type="module">
-    import '@dawcore/components';
-  </script>
-  
+  <script type="module" src="main.js"></script>
+
 </body>
 
 </html>
