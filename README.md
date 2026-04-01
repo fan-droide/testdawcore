@@ -8,6 +8,24 @@ This repository is designed to give new developers a complete, working picture o
 
 ---
 
+## Table of Contents
+
+- [What Is `@dawcore/components`?](#what-is-dawcorecomponents)
+- [What's in This Repo](#whats-in-this-repo)
+- [Getting Started](#getting-started)
+- [The Demo](#the-demo-indexhtml)
+- [Component Reference](#component-reference)
+- [JavaScript API](#javascript-api)
+- [Events](#events)
+- [Theming](#theming)
+- [Framework Integration](#framework-integration)
+- [Known Issues](#known-issues)
+- [Deploy to GitHub Pages](#deploy-to-github-pages)
+- [Collaborating with Claude Code](#collaborating-with-claude-code)
+- [Resources](#resources)
+
+---
+
 ## What Is `@dawcore/components`?
 
 `@dawcore/components` is the Web Components migration of [waveform-playlist](https://github.com/naomiaro/waveform-playlist). It replaces the previous React + styled-components architecture with native browser [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry), built on [Lit](https://lit.dev/) (~6 KB).
