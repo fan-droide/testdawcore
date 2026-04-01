@@ -4,7 +4,7 @@ A sandbox and onboarding guide for [`@dawcore/components`](https://github.com/na
 
 This repository is designed to give new developers a complete, working picture of the library's possibilities and a clean starting point for their own projects.
 
-> **Live demo:** [https://gilpanal.github.io/testdawcore](https://gilpanal.github.io/testdawcore) *(GitHub Pages — see [Deploy](#deploy-to-github-pages))*
+> **Live demo:** [https://fan-droide.github.io/testdawcore](https://fan-droide.github.io/testdawcore) *(GitHub Pages — see [Deploy](#deploy-to-github-pages))*
 
 ---
 
