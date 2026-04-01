@@ -100,11 +100,10 @@ npm run preview   # Preview the production build locally
   <daw-play-button></daw-play-button>
   <daw-pause-button></daw-pause-button>
   <daw-stop-button></daw-stop-button>
-  <daw-record-button></daw-record-button>
 </daw-transport>
 ```
 
-That's it. A fully functional DAW editor with playback, recording, undo/redo, clip interactions, file drag-and-drop, and keyboard shortcuts — all in ~20 lines of HTML.
+That's it. A fully functional DAW editor with playback, undo/redo, clip interactions, file drag-and-drop, and keyboard shortcuts — all in ~20 lines of HTML.
 
 ---
 
@@ -331,7 +330,7 @@ See the [full spec](https://github.com/naomiaro/waveform-playlist/blob/main/docs
 
 `react` and `react-dom` appear as dependencies in this project's `package.json`. They are **not required** by `@dawcore/components` (which only depends on `lit` ~6 KB). This is a configuration issue in the `@dawcore` package that causes npm to resolve React transitively.
 
-**Status:** Reported upstream — see [naomiaro/waveform-playlist](https://github.com/naomiaro/waveform-playlist)
+**Status:** Reported upstream — see [naomiaro/waveform-playlist/issues/373](https://github.com/naomiaro/waveform-playlist/issues/373)
 
 Until fixed, React can safely be removed from `package.json` if you are not using it in your own code:
 ```bash
