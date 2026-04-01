@@ -1,16 +1,31 @@
-<script type="module">
-  import '@dawcore/components';
-</script>
+<!doctype html>
+<html lang="en">
 
-<daw-editor id="editor" mono clip-headers interactive-clips timescale file-drop>
-  <daw-track name="Vocals">
-    <daw-clip src="audio/RATP.mp3"></daw-clip>
-  </daw-track>
-   <daw-keyboard-shortcuts playback splitting undo></daw-keyboard-shortcuts>
-</daw-editor>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="data:,">
+  <title>Hello DawCore!</title>
+</head>
 
-<daw-transport for="editor">
-  <daw-play-button></daw-play-button>
-  <daw-pause-button></daw-pause-button>
-  <daw-stop-button></daw-stop-button>
-</daw-transport>
+<body>
+
+  <daw-editor id="editor" mono clip-headers interactive-clips timescale file-drop>
+    <daw-track name="Vocals">
+      <daw-clip src="audio/RATP.mp3"></daw-clip>
+    </daw-track>
+    <daw-keyboard-shortcuts playback splitting undo></daw-keyboard-shortcuts>
+  </daw-editor>
+
+  <daw-transport for="editor">
+    <daw-play-button></daw-play-button>
+    <daw-pause-button></daw-pause-button>
+    <daw-stop-button></daw-stop-button>
+  </daw-transport>
+
+  <script type="module">
+    import '@dawcore/components';
+  </script>
+  
+</body>
+
+</html>
