@@ -25,9 +25,12 @@ This repository is designed to give new developers a complete, working picture o
 
 ```
 testdawcore/
-├── index.html        # Main demo — a working DAW in ~20 lines of HTML
+├── index.html                          # Main demo — a working DAW in ~20 lines of HTML
 ├── audio/
-│   └── RATP.mp3      # Sample audio file pre-loaded into the demo track
+│   └── RATP.mp3                        # Sample audio file pre-loaded into the demo track
+├── vite.config.js                      # Sets base path for GitHub Pages
+├── CLAUDE.md                           # AI collaboration conventions (read by Claude Code)
+├── .github/workflows/deploy.yml        # Automated GitHub Pages deployment
 └── package.json
 ```
 
@@ -320,23 +323,22 @@ npm uninstall react react-dom
 
 ## Deploy to GitHub Pages
 
-1. Add a `vite.config.js` with the correct base path:
+Deployment is automated via GitHub Actions. Every push to `main` triggers a build and deploys the result to GitHub Pages.
 
-```javascript
-// vite.config.js
-export default {
-  base: '/testdawcore/',
-}
-```
+### How it works
 
-2. Build and deploy:
+- [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) runs `npm ci && npm run build` on every push to `main`
+- The `dist/` output is published using the official `actions/deploy-pages` action
+- [`vite.config.js`](vite.config.js) sets `base: '/testdawcore/'` so all asset paths resolve correctly on Pages
 
-```bash
-npm run build
-# Then push the dist/ folder to the gh-pages branch, or use GitHub Actions
-```
+### One-time setup (already done for this repo)
 
-3. Enable GitHub Pages in repository Settings → Pages → source: `gh-pages` branch.
+If you fork this repo and want to deploy your own version:
+
+1. Go to **Settings → Pages → Source** and select **GitHub Actions**
+2. Push to `main` — the workflow handles everything else
+
+The live demo deploys to: `https://<your-username>.github.io/testdawcore/`
 
 ---
 
